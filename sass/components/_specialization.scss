@@ -1,0 +1,42 @@
+.specialization {
+  @media  screen and (max-width: 1199px) {
+    display: none;
+  }
+  @extend %section;
+}
+
+.specialization__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.specialization__title,
+.team-title,
+.regular-clients-title {
+  @extend %h2-title;
+}
+
+.specialization__item {
+  position: relative;
+}
+
+.specialization__text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  text-align: center;
+  padding: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}

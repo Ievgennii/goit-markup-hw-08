@@ -1,0 +1,29 @@
+.logo {
+  display: inline-block;
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: color var(--transition);
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &--header-color {
+    color: var(--title-color);
+  }
+
+  &--footer-color {
+    color: var(--primary-white-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &__span {
+    color: var(--accent-color);
+  }
+}

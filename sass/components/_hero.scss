@@ -1,0 +1,83 @@
+.hero {
+  background-color: var(--background-hero-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+
+
+  &__title {
+    color: var(--primary-white-color);    
+
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 360px;
+
+    @media screen and (min-width: 768px){
+      
+      font-weight: 900;
+      font-size: 26px;
+      line-height: calc(42px/26px);
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    @media screen and (min-width: 1200px){
+      max-width: 696px;
+
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    padding: 10px 32px;
+
+    box-shadow: var(--box-shadow);
+
+    color: var(--primary-white-color);
+    background: var(--accent-color);
+
+    cursor: pointer;
+
+    outline: 1px solid rgba(47, 48, 58, 0.4);
+
+    transition: background-color var(--transition), box-shadow var(--transition),
+      outline var(--transition);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    outline: 1px solid var(--subscription-hover-color);
+    background: var(--subscription-hover-color);
+    box-shadow: var(--box-shadow);
+  }
+
+  &__button:active {
+    background-color: var(--activ-color);
+  }
+}

@@ -1,0 +1,28 @@
+.address {
+  color: var(--primary-white-color);
+  font-style: normal;
+  margin-top: 20px;
+
+
+  & li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.address-footer {
+  color: var(--address-footer-color);
+  text-decoration: none;
+
+  transition: color var(--transition);
+
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-address {
+  width: 231px;
+}
+
