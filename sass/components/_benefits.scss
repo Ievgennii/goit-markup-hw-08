@@ -1,5 +1,5 @@
 .benefits {
-  padding-bottom: 0;
+  padding-bottom: 60px;
   @extend %section;
 
   &__list {
@@ -9,9 +9,7 @@
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
-      flex-wrap: wrap;
-      // align-items: flex-start;
-      // justify-content: space-between;
+      flex-wrap: wrap;      
     }
   }
 

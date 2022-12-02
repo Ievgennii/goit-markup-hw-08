@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
+  width: 210px;
+height: 92px;
 
   border: 1px solid var(--social-color);
   border-radius: 4px;
@@ -11,6 +11,16 @@
   transition: border var(--transition), color var(--transition);
 
   color: var(--social-color);
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+height: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  height: 92px;
+  }
 
 
   &:hover,

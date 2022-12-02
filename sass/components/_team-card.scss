@@ -1,5 +1,5 @@
 .teamer .teamer-item {
-  width: 270px;
+  width: 450px;
 
   background: var(--primary-white-color);
   /* material shadow v1 */
@@ -9,6 +9,14 @@
   border-radius: 0px 0px 4px 4px;
 
   padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .teamer img {
