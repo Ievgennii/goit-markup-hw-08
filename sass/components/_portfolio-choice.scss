@@ -34,13 +34,25 @@
 
 .portfolio-choice {
   display: flex;
-  justify-content: center;
-  gap: 8px;
-
-  margin-bottom: 50px;
-
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 8px;
+  // gap: 8px;
   color: var(--title-color);
+  margin-bottom: 40px;
+  width: 80%;
 
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  margin-bottom: 30px; 
+  width: 100%; 
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%; 
+  }
 
   &:hover,
   &:focus {

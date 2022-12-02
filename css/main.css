@@ -27,7 +27,12 @@
 }
 
 .portfolio, .regular-clients, .team, .specialization, .benefits {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio, .regular-clients, .team, .specialization, .benefits {
+    padding: 94px 0;
+  }
 }
 
 body {
@@ -1081,12 +1086,33 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 15px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
   color: var(--title-color);
+  margin-bottom: 40px;
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-choice {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-choice {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+  }
 }
 .portfolio-choice:hover, .portfolio-choice:focus {
   color: var(--accent-color);
