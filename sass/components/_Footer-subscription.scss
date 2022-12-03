@@ -1,19 +1,34 @@
 .subscription {
   width: 570px;
-  height: 86px;
-  margin-left: 93px;
+  // height: 86px;
+  // margin-left: 93px;
   margin-top: 12px;
 
   display: flex;
-  gap: 12px;
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin: auto;
+  }
+
+  
+  
+  @media screen and (min-width: 1200px) {
+    
+    gap: 12px;
   align-items: flex-end;
+  }
+  
 }
 
 .subscription-field {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
+  
 
   & label {
     font-weight: 700;
@@ -44,6 +59,9 @@
     border-radius: 4px;
 
     transition: border-color var(--transition);
+    @media screen and (max-width: 1199px) {
+      width: 450px;
+    }
   }
 
   & input:focus {

@@ -22,7 +22,27 @@
   }
 }
 
-.footer-address {
-  width: 231px;
+.footer-address {  
+  width: 232px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+  
+}
+
+.address-list {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  
+}
+
+.logo.logo--footer-color {
+  padding: 0;
+  @media screen and (max-width: 1199px) {
+    display: inline-block;
+    padding: 0 calc((100% - 142px) / 2);
+  }
+  
 }
 
