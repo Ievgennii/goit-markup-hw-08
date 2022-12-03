@@ -878,6 +878,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-white-color);
 }
 @media screen and (min-width: 780px) {
@@ -889,10 +890,8 @@ img {
   .footer-social {
     margin-top: 12px;
     margin-right: 92px;
+    text-align: left;
   }
-}
-.footer-social-title {
-  margin-bottom: 20px;
 }
 @media screen and (max-width: 1199px) {
   .footer-social-title {
