@@ -572,9 +572,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -593,6 +591,9 @@ img {
 }
 
 .menu-container.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -1484,6 +1485,11 @@ textarea {
           transform: translateY(-50%);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list__item:first-child .border {
+    height: 146px;
+  }
+}
 .border {
   border-left: 1px solid var(--portfolio-border-color);
   border-right: 1px solid var(--portfolio-border-color);
