@@ -979,7 +979,6 @@ img {
 }
 
 .subscription {
-  max-width: 570px;
   margin-top: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -987,7 +986,6 @@ img {
 }
 @media screen and (max-width: 1199px) {
   .subscription {
-    max-width: 450px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1002,11 +1000,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .subscription {
-    width: 570px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .subscription {
+    width: 570px;
     gap: 12px;
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -1038,7 +1037,6 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--address-footer-color);
-  width: 358px;
   height: 50px;
   padding: 0 16px;
   background-color: var(--background-black-color);
@@ -1049,9 +1047,14 @@ img {
   -webkit-transition: border-color var(--transition);
   transition: border-color var(--transition);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .subscription-field input {
-    max-width: 450px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .subscription-field input {
+    width: 385px;
   }
 }
 .subscription-field input:focus {
