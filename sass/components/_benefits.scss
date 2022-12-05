@@ -2,6 +2,10 @@
   padding-bottom: 60px;
   @extend %section;
 
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;

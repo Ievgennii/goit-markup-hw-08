@@ -401,6 +401,11 @@ img {
 .benefits {
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-bottom: 0;
+  }
+}
 .benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1033,7 +1038,7 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--address-footer-color);
-  max-width: 358px;
+  width: 358px;
   height: 50px;
   padding: 0 16px;
   background-color: var(--background-black-color);
