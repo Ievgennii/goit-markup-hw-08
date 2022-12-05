@@ -26,8 +26,8 @@
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
+  min-height: 609px;
 
   padding: 40px;
 

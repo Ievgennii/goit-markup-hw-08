@@ -1,8 +1,8 @@
 .hero {
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   text-align: center;
 
@@ -60,6 +60,11 @@
     ),
     url(../images/Hero/img_l@2x.jpg);
   }
+
+  @media screen and (min-width: 1200px){
+    padding-top: 200px;
+  padding-bottom: 200px;
+  }
   }
    
 
@@ -73,14 +78,14 @@
 
     max-width: 360px;
 
-    @media screen and (min-width: 768px) {
+    
       font-weight: 900;
       font-size: 26px;
       line-height: calc(42px / 26px);
       text-align: center;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-    }
+    
 
     @media screen and (min-width: 1200px) {
       max-width: 696px;
