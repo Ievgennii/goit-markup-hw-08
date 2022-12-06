@@ -2,6 +2,7 @@
   color: var(--primary-white-color);
   font-style: normal;
   margin-top: 20px;
+  
 
 
   & li:not(:last-child) {
@@ -23,7 +24,10 @@
 }
 
 .footer-address {  
-  width: 232px;
+  // max-width: 232px;
+  // @media screen and (max-width: 1199px) {
+  //   min-height: 144px;
+  // }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }

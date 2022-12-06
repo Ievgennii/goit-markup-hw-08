@@ -97,44 +97,6 @@ img {
   display: flex;
 }
 
-.conteiner--flex-start {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 60px;
-  padding: 0 15px;
-}
-@media screen and (min-width: 768px) {
-  .conteiner--flex-start {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .conteiner--flex-start {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    gap: 0;
-  }
-}
-
 .button {
   color: var(--title-color);
   background: var(--primary-white-color);
@@ -773,6 +735,12 @@ img {
           align-items: center;
   gap: 10px;
 }
+@media screen and (max-width: 479px) {
+  .socials {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .social-link {
   display: -webkit-box;
@@ -868,6 +836,60 @@ img {
   display: flex;
 }
 
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 60px;
+  padding: 0 15px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-box {
+    width: 480px;
+    min-height: 484px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 60px;
+    padding: 0 15px;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 0;
+  }
+}
+
 .address {
   color: var(--primary-white-color);
   font-style: normal;
@@ -887,9 +909,6 @@ img {
   color: var(--accent-color);
 }
 
-.footer-address {
-  width: 232px;
-}
 @media screen and (min-width: 1200px) {
   .footer-address {
     margin-right: 70px;
@@ -913,7 +932,6 @@ img {
 }
 
 .footer-social {
-  width: 206px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -921,6 +939,11 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: var(--primary-white-color);
+}
+@media screen and (max-width: 1199px) {
+  .footer-social {
+    min-height: 82px;
+  }
 }
 @media screen and (min-width: 780px) {
   .footer-social {
@@ -944,11 +967,20 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social-footer-link {
@@ -979,6 +1011,7 @@ img {
 }
 
 .subscription {
+  max-width: 570px;
   margin-top: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -996,11 +1029,6 @@ img {
     gap: 20px;
     text-align: center;
     margin: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .subscription {
-    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1046,8 +1074,9 @@ img {
   border-radius: 4px;
   -webkit-transition: border-color var(--transition);
   transition: border-color var(--transition);
+  width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .subscription-field input {
     width: 450px;
   }
@@ -1093,8 +1122,7 @@ img {
 }
 
 .subscription-button {
-  width: 200px;
-  height: 50px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1121,6 +1149,11 @@ img {
   transition: background-color var(--transition), outline var(--transition), -webkit-box-shadow var(--transition);
   transition: background-color var(--transition), box-shadow var(--transition), outline var(--transition);
   transition: background-color var(--transition), box-shadow var(--transition), outline var(--transition), -webkit-box-shadow var(--transition);
+}
+@media screen and (min-width: 480px) {
+  .subscription-button {
+    padding: 10px 42px;
+  }
 }
 .subscription-button:hover, .subscription-button:focus {
   outline: 1px solid var(--subscription-hover-color);
@@ -1154,8 +1187,6 @@ img {
 }
 
 .modal {
-  max-width: 450px;
-  min-height: 609px;
   padding: 40px;
   background: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1170,6 +1201,12 @@ img {
   transition: opacity var(--transition), -webkit-transform var(--transition);
   transition: transform var(--transition), opacity var(--transition);
   transition: transform var(--transition), opacity var(--transition), -webkit-transform var(--transition);
+}
+@media screen and (min-width: 450px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1387,6 +1424,12 @@ textarea {
   transition: background-color var(--transition), outline var(--transition), -webkit-box-shadow var(--box-shadow);
   transition: background-color var(--transition), outline var(--transition), box-shadow var(--box-shadow);
   transition: background-color var(--transition), outline var(--transition), box-shadow var(--box-shadow), -webkit-box-shadow var(--box-shadow);
+}
+@media screen and (min-width: 450px) {
+  .user-data-button {
+    width: 200px;
+    height: 50px;
+  }
 }
 .user-data-button:hover, .user-data-button:focus {
   outline: 1px solid var(--subscription-hover-color);

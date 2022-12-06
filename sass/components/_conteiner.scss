@@ -21,23 +21,23 @@
   display: flex;
 }
 
-.conteiner--flex-start {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 60px;
-  padding: 0 15px;
+// .conteiner--flex-start {
+//   display: flex;
+//   align-items: center;
+//   flex-direction: column;
+//   row-gap: 60px;
+//   padding: 0 15px;
 
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    // column-gap: 165px;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
+//   @media screen and (min-width: 768px) {
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     // column-gap: 165px;
+//     justify-content: space-around;
+//     align-items: flex-start;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    align-items: flex-start;
-    gap: 0;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     align-items: flex-start;
+//     gap: 0;
+//   }
+// }

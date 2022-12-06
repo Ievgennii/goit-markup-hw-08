@@ -3,6 +3,9 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  @media screen and (max-width:479px) {
+    flex-wrap: wrap;
+  }
 }
 
 .social-link {

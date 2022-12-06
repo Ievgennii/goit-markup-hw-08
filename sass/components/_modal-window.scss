@@ -11,12 +11,10 @@
 
   transition: opacity var(--transition), visibility var(--transition);
 
-
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-  
 
     & .modal {
       opacity: 0;
@@ -26,9 +24,6 @@
 }
 
 .modal {
-  max-width: 450px;
-  min-height: 609px;
-
   padding: 40px;
 
   background: var(--primary-white-color);
@@ -43,10 +38,14 @@
 
   transition: transform var(--transition), opacity var(--transition);
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 450px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 528px;
-  height: 581px;
-    
+    height: 581px;
   }
 }
 
@@ -70,7 +69,6 @@
   background-color: var(--primary-white-color);
 
   transition: fill var(--transition);
-
 
   &:hover {
     fill: var(--accent-color);
