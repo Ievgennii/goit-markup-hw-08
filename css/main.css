@@ -20,8 +20,10 @@
 .team-title,
 .regular-clients-title {
   color: var(--title-color);
-  font-size: 36px;
-  line-height: 1.17;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -29,12 +31,19 @@
   .specialization__title,
 .team-title,
 .regular-clients-title {
+    font-size: 36px;
+    line-height: 1.17;
     margin-bottom: 50px;
   }
 }
 
 .portfolio, .regular-clients, .team, .specialization, .benefits {
   padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio, .regular-clients, .team, .specialization, .benefits {
+    padding: 94px 0;
+  }
 }
 
 body {
